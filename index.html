@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>β版簡易クッキークリッカー</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- 開始時の処理 -->
+    <script type="text/javascript">
+      let cookies=0;
+    </script>
+
+    <!-- クッキー枚数表示設定 -->
+    <center>
+    <font size="7" color="#000000">
+    <h1 id="cookie">0 Cookies</h1>
+    </font>
+    </center>
+
+    <!-- クッキーがクリックされた時の処理 -->
+    <center>
+    <img src="cookie.png" onclick="cookies+=1;document.getElementById('cookie').innerHTML = cookies+' Cookies';">
+    </center>
+  </body>
+</html>
