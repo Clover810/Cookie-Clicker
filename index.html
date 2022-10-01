@@ -1,15 +1,16 @@
-<html>
+<!-- Cookie Clicker HTML -->
+<html lang="ja">
   <head>
     <meta charset="UTF-8">
+
     <title>β版簡易クッキークリッカー</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <!-- 開始時の処理 -->
-    <script type="text/javascript">
-      let cookies=0;
-    </script>
+
+    <!-- 外部JavaScriptを読み込む -->
+    <script src="main.js"></script>
 
     <!-- クッキー枚数表示設定 -->
     <center>
@@ -20,7 +21,14 @@
 
     <!-- クッキーがクリックされた時の処理 -->
     <center>
-    <img src="cookie.png" onclick="cookies+=1;document.getElementById('cookie').innerHTML = cookies+' Cookies';">
+    <div class="cookie">
+    <img src="cookie.png" onclick="cookies+=1;document.getElementById('cookie').innerHTML = cookies+' Cookies';audio();">
+    </div>
     </center>
+
+    <audio id="click_audio">
+      <source src="Cookie_Click.mp3">
+    </audio>
+
   </body>
 </html>
