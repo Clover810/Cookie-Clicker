@@ -1,0 +1,42 @@
+<!-- Cookie Clicker HTML -->
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>β版簡易クッキークリッカー</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!-- 外部JavaScriptを読み込む -->
+    <script src="main.js"></script>
+
+    <!-- クッキー枚数表示設定 -->
+    <center>
+    <font size="7" color="#000000">
+    <h1 id="cookie">0 Cookies</h1>
+    </font>
+    </center>
+
+    <!-- セーブデータロード -->
+    <script type="text/javascript">
+      load();
+    </script>
+
+    <!-- クッキーがクリックされた時の処理 -->
+    <center>
+    <div class="cookie">
+    <img src="cookie.png" onclick="cclick();audio();save();">
+    </div>
+    </center>
+
+    <!-- audio設定 -->
+    <audio id="click_audio">
+      <source src="Cookie_Click.mp3">
+    </audio>
+
+    <!-- セーブデータ削除 -->
+    <button type="button" onclick="savedel();" class="savedelbtn"><p class="savedeltxt">セーブデータ削除</p></button>
+  </body>
+</html>
