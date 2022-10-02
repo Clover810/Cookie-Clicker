@@ -1,0 +1,40 @@
+<!-- Cookie Clicker HTML -->
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>β版簡易クッキークリッカー</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <!-- 外部JavaScriptを読み込む -->
+    <script src="main.js"></script>
+
+    <!-- クッキー枚数表示設定 -->
+    <h1 id="cookie" class="cookiesdisplay">0 Cookies</h1>
+
+    <!-- セーブデータロード -->
+    <script type="text/javascript">
+      load();
+    </script>
+
+    <!-- クッキーがクリックされた時の処理 -->
+    <div class="cookie">
+    <img src="cookie.png" onclick="cclick();save();" onerror="alert('【エラーコード:0001】\n大クッキーの画像読み込みが失敗しました。\nサイトをリロードして下さい。\n何度もこのエラーが表示される場合は、wifiの環境が良い所でプレイしてください。\nそれでも改善されない場合はTwitter「@Clover114514810」にてDMを下さい。');">
+    </div>
+
+    <!-- audio設定 -->
+    <audio id="click_audio">
+      <source src="Cookie_Click.mp3">
+    </audio>
+
+    <!-- セーブデータ削除 -->
+    <button type="button" onclick="savedel();" class="savedelbtn"><p class="savedeltxt">セーブデータ削除</p></button>
+    <br><br>
+    <!-- 〜ここからショップ〜 -->
+    <button type="button" onclick="clickshop();" class="clickshopbtn"><p class="clickshoptxt">クリック力増加</p></button>
+    <h3>Cookie Clicker: ver.0.4.0</h3>
+  </body>
+</html>

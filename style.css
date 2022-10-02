@@ -1,0 +1,50 @@
+/* Cookie Clicker CSS */
+
+/* ダブルタップズーム禁止 */
+html {
+  touch-action: manipulation;
+}
+
+/* 大クッキーのデザイン */
+.cookie {
+  text-align:center;
+  filter: drop-shadow(5px 5px 10px #000000);
+}
+
+/* 大クッキーの枚数表示文字デザイン */
+.cookiesdisplay {
+  text-align:center;
+  text-shadow: 5px 5px 10px #797979;
+  font-size: 500%;
+  color: #000000;
+}
+
+/* セーブデータ削除ボタンのデザイン */
+.savedelbtn {
+  width: 30em;
+  height:9em;
+  box-shadow: 5px 5px;
+}
+
+/* セーブデータ削除文字のデザイン */
+.savedeltxt {
+  font-size: 300%;
+  color: #ff0000;
+}
+
+/* クリック力増加ボタンのデザイン */
+.clickshopbtn {
+  width: 15em;
+  height: 6em;
+  display: inline-block;
+  background-color: #ff0000; /*背景カラー*/
+  border-radius: 60px;
+  color: #ffffff; /*文字カラー*/
+  cursor: pointer;
+  transform: translateY(5px);
+}
+
+/* クリック力増加文字のデザイン */
+.clickshoptxt {
+  font-size: 150%;
+}
